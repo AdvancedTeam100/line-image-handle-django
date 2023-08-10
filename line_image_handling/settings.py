@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main_work'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,13 @@ WSGI_APPLICATION = 'line_image_handling.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:sthMenun9HKrYZT47jcE@containers-us-west-173.railway.app:6729/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'sthMenun9HKrYZT47jcE',
+        'HOST': 'containers-us-west-173.railway.app',
+        'PORT': 6729,
     }
 }
 

@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "line_image_handling/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "line_image_handling/wsgi.py"
+      }
+    ]
+}
